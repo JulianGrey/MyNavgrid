@@ -1,0 +1,73 @@
+#navgrid {
+  position: relative;
+  margin: auto;
+  padding: 0 10px 0 10px;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+#navgrid p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.gridLink, .selected {
+  cursor: pointer;
+}
+
+.gridLink {
+  color: #aaaaaa;
+  z-index: 0;
+}
+
+.hover {
+  color: #555555;
+  z-index: 2;
+}
+
+.selected {
+  color: #cc0000;
+  z-index: 1;
+}
+
+/* calculations are based on the cell position from the top or left (0 base) */
+
+.SIMPLE {
+  top: 0; /* (vertPlacement * 0) */
+  left: 75px; /* (horizPlacement * 3) */
+}
+
+.PORTFOLIO {
+  top: 70px; /* (vertPlacement * 2) */
+  left: 25px; /* (horizPlacement * 1) */
+}
+
+.RESPONSIVE {
+  top: 140px; /* (vertPlacement * 4) */
+  left: 100px; /* (horizPlacement * 4) */
+}
+
+.CREATIVE {
+  top: 210px; /* (vertPlacement * 6) */
+  left: 100px; /* (horizPlacement * 4) */
+}
+
+.ABOUT {
+  top: 245px; /* (vertPlacement * 7) */
+  left: 0; /* (horizPlacement * 0) */
+}
+
+.INTERACTIVE {
+  top: 0; /* (vertPlacement * 0) */
+  left: 100px; /* (horizPlacement * 4) */
+}
+
+.CONTACT {
+  top: 105px; /* (vertPlacement * 3) */
+  left: 0; /* (horizPlacement * 0) */
+}
