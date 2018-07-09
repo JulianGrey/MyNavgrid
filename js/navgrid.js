@@ -46,15 +46,6 @@ function displayWord(id, direction, placement, cellWidth) {
   document.getElementsByTagName("style")[0].innerHTML += styleString;
 }
 
-setMandatoryClass();
-displayWord("SIMPLE", "h", horizPlacement, myCellWidth);
-displayWord("PORTFOLIO", "h", horizPlacement, myCellWidth);
-displayWord("RESPONSIVE", "h", horizPlacement, myCellWidth);
-displayWord("CREATIVE", "h", horizPlacement, myCellWidth);
-displayWord("ABOUT", "h", horizPlacement, myCellWidth);
-displayWord("INTERACTIVE", "v", vertPlacement, myCellWidth);
-displayWord("CONTACT", "v", vertPlacement, myCellWidth);
-
 function elementClicked(e) {
   var myContent = document.getElementById("request-text");
 
@@ -80,5 +71,14 @@ function elementClicked(e) {
     myContent.innerHTML = "<p>Contact content</p>";
   }
 }
+
+setMandatoryClass();
+displayWord("SIMPLE", "h", horizPlacement, myCellWidth);
+displayWord("PORTFOLIO", "h", horizPlacement, myCellWidth);
+displayWord("RESPONSIVE", "h", horizPlacement, myCellWidth);
+displayWord("CREATIVE", "h", horizPlacement, myCellWidth);
+displayWord("ABOUT", "h", horizPlacement, myCellWidth);
+displayWord("INTERACTIVE", "v", vertPlacement, myCellWidth);
+displayWord("CONTACT", "v", vertPlacement, myCellWidth);
 
 document.getElementById("body").addEventListener("click", elementClicked, false);
